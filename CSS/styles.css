@@ -1,5 +1,16 @@
-#home {
-    background-image: url(/Images/pizza.jpg);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+body{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+.blog{
+    background-image: url(/Images/barbie.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: auto;
+}
+.text{
+    padding-top: 200px;
 }
