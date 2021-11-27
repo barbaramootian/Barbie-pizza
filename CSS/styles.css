@@ -9,8 +9,16 @@ body{
     background-image: url(/Images/barbie.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
+    height: 900px;
 }
 .text{
     padding-top: 200px;
+}
+#order{
+     border-radius: 50px;
+     box-sizing: 25px;
+     margin-top: 250px;
+}
+#contact{
+    background-color: #0E0301;
 }
