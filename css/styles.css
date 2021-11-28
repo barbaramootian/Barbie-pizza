@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+body{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+.blog{
+    background-image: url(../images/barbie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+.text{
+    padding-top: 200px;
+}
+#order{
+     border-radius: 50px;
+     box-sizing: 25px;
+     margin-top: 250px;
+}
+#contact{
+    background-color: #0E0301;
+}
