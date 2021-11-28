@@ -6,7 +6,7 @@ body{
     color: #fff;
 }
 .blog{
-    background-image: url(../Images/barbie.jpg);
+    background-image: url(../images/barbie.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;
