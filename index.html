@@ -58,67 +58,69 @@
   </section>
   <section>
     <div class="container max-auto pt-4" class="order">
-      <h2 class="text-center font-weight-bold text-dark text-uppercase">Order Now</h2>
-      <div class="row">
-        <div class="col-sm">
-          <div class="card" style="width: 20rem;">
-            <img src="./images/flavour.jpg">
-            <div class="card-body text-dark text-center">
-              <h5 class="card-title">Pizza Flavour</h5>
-              <select class="form-select" aria-label="Default select example" id="flavor">
-                <option selected>Choose your Pizza Flavour</option>
-                <option value="Chicken Hawaiian">Chicken Hawaiian</option>
-                <option value="Cheese Burger">Cheese Burger</option>
-                <option value="Veg Feast">Veg Feast</option>
-                <option value="Spicy Boerewors">Spicy Boerewors</option>
-                <option value="Meat Deluxe">Meat Deluxe</option>
-              </select>
+      <form id="form">
+        <h2 class="text-center font-weight-bold text-dark text-uppercase">Order Now</h2>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card" style="width: 20rem;">
+              <img src="./images/flavour.jpg">
+              <div class="card-body text-dark text-center">
+                <h5 class="card-title">Pizza Flavour</h5>
+                <select class="form-select" aria-label="Default select example" id="flavor">
+                  <option selected>Choose your Pizza Flavour</option>
+                  <option value="Chicken Hawaiian">Chicken Hawaiian</option>
+                  <option value="Cheese Burger">Cheese Burger</option>
+                  <option value="Veg Feast">Veg Feast</option>
+                  <option value="Spicy Boerewors">Spicy Boerewors</option>
+                  <option value="Meat Deluxe">Meat Deluxe</option>
+                </select>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-sm">
-          <div class="card" style="width: 20rem;">
-            <img src="./images/crust.jpg">
-            <div class="card-body text-dark text-center">
-              <h5 class="card-title">Pizza Crusts</h5>
-              <select class="form-select" aria-label="Default select example" id="crust">
-                <option selected>Choose your Pizza Crust</option>
-                <option value="Crispy">Crispy@300</option>
-                <option value="Stuffed">Stuffed@400</option>
-                <option value="Gluten-free">Gluten-free@500</option>
-              </select>
+          <div class="col-sm">
+            <div class="card" style="width: 20rem;">
+              <img src="./images/crust.jpg">
+              <div class="card-body text-dark text-center">
+                <h5 class="card-title">Pizza Crusts</h5>
+                <select class="form-select" aria-label="Default select example" id="crust">
+                  <option selected>Choose your Pizza Crust</option>
+                  <option value="Crispy">Crispy@300</option>
+                  <option value="Stuffed">Stuffed@300</option>
+                  <option value="Gluten-free">Gluten-free@300</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 20rem;">
+              <img src="./images/topping.jpg">
+              <div class="card-body text-dark text-center">
+                <h5 class="card-title"> Choose your Pizza Topping</h5>
+                <select class="form-select" aria-label="Default select example" id="toppy">
+                  <option selected>Mushroom</option>
+                  <option value="Mushroom">Mushroom@80</option>
+                  <option value="Onion">Onion@80</option>
+                  <option value="Tomatoes">Tamatoes@80</option>
+                  <option value="Sausage">Sausage@80</option>
+                  <option value="Cheese">Cheese@80
+                  <option>
+                </select>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm">
-          <div class="card" style="width: 20rem;">
-            <img src="./images/topping.jpg">
-            <div class="card-body text-dark text-center">
-              <h5 class="card-title"> Choose your Pizza Topping</h5>
-              <select class="form-select" aria-label="Default select example" id="toppy">
-                <option selected>Mushroom</option>
-                <option value="Chicken Macon BBQ">Mushroom@80</option>
-                <option value="Cheese Burger">Onion@80</option>
-                <option value="Veg Feast">Tamatoes@80</option>
-                <option value="Spicy Boerewors">Sausage@80</option>
-                <option value="Meat Deluxe">Cheese@80
-                <option>
-              </select>
-            </div>
-          </div>
+        <label for="select">Select Size</label>
+        <select class="browser-default custom-select custom-select-md mb-3" id="size">
+          <option selected value="0">Choose the size you want</option>
+          <option value="small">Small @ksh. 500</option>
+          <option value="medium">Medium @ksh. 1000</option>
+          <option value="medium">Large @ksh. 1500</option>
+        </select>
+        <div id="button">
+          <button type="submit" id="make-order" class="btn btn-success">Make order</button>
         </div>
-      </div>
-      <label for="select">Select Size</label>
-      <select class="browser-default custom-select custom-select-md mb-3" id="size">
-        <option selected value="0">Choose the size you want</option>
-        <option value="small">Small @ksh. 500</option>
-        <option value="medium">Medium @ksh. 1000</option>
-        <option value="medium">Large @ksh. 1500</option>
-      </select>
-      <div id="button">
-        <button type="submit" id="make-order" class="btn btn-success">Make order</button>
-      </div>
+      </form>
     </div>
   </section>
   <!--Order made-->
@@ -137,8 +139,8 @@
         <tbody id="newOrder">
           <tr>
             <th id="flavour"></th>
-            <td id="size"></td>
-            <td id="crust"></td>
+            <td id="sizing"></td>
+            <td id="crusty"></td>
             <td id="topping"></td>
             <td id="total"></td>
           </tr>
